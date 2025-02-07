@@ -21,6 +21,16 @@ It features a **clean design, dark mode support, and easy content management** t
 
 ---
 
+## 🔧 First things first!
+
+As a former student of Ethical Concerns in Software Engineering, I want to highlight that the majority of the frontend components in this project were generated using V0.dev, significantly reducing frontend development time to just two days.
+
+However, from ideation to execution, I handled everything from ensuring the system worked as envisioned, integrating different components, and implementing critical features.
+
+Additionally, some comment lines in the code have been intentionally left to credit AI for its contribution and maintain transparency in its usage.
+
+---
+
 ## 📦 Prerequisites
 
 Before you begin, ensure you have the following installed:
