@@ -38,93 +38,207 @@ export const navigationLinks = [
 export const socialLinks = [
   {
     "platform": "github",
-    "url": "https://github.com/abhishekbuilds",
+    "url": "https://github.com/pratyek",
     icon: Github
   },
   {
     "platform": "linkedin",
-    "url": "https://linkedin.com/in/abhishekbuilds",
+    "url": "https://www.linkedin.com/in/pratyek-thumula-2a62b4293/",
     icon: Linkedin
   },
   {
-    "platform": "twitter",
-    "url": "https://twitter.com/AbhiTweetsEtc",
-    icon: Twitter
-  },
-  {
     "platform": "email",
-    "url": "mailto:iabhishekapp@gmail.com",
+    "url": "mailto:pratyekpk3@gmail.com",
     icon: Mail
   }
 ]
 
 export const personalInfo = {
-  "name": "Abhishek Singh",
+  "name": "Pratyek Thumula",
   "title": "Software Engineer",
   "email": "your.email@example.com",
-  "location": "Los Angeles, CA",
-  "bio": "A curious mind navigating the world with 4 years of software engineering experience, turning challenges into opportunities. Currently pursuing my Master’s in Computer Science at CSU Fullerton. When I’m not behind the keyboard, you’ll find me exploring new places, capturing nature’s beauty, or binging on travel vlogs. I’m looking for my next challenge and a chance to leave a positive mark.",
-  "resumeUrl": "https://www.dropbox.com/scl/fi/960w9k85626j57x55myb3/Abhishek-Singh-SoftwareEngineer.pdf?rlkey=htbuuxnfw5fd4lg2h34t1gaev&st=ledi8206&dl=1",
-  "imageUrl": "https://www.dropbox.com/scl/fi/les7f5rrxipcl8w81rv71/portfolio_about_me.jpeg?rlkey=73ppvkyf72rs28xd991z8e595&e=1&st=ktaqkjug&dl=1",
+  "location": "Hyderabad , Telangana , India",
+  "bio": "Full-stack developer and machine learning enthusiast pursuing a B.Tech in Computer Science. Experienced in building scalable applications with Next.js, MongoDB, and Docker. Passionate about deep learning and reinforcement learning, demonstrated through the ViTalia project for malaria detection. Always eager to learn and tackle new challenges in both software development and AI.",
+  "resumeUrl": "https://www.dropbox.com/scl/fi/m4fbof8p55wtyf44lu57z/pratyek-resume.pdf?rlkey=3hp0ve36kbovkqn5ivoj7063d&raw=1",
+  "imageUrl": "https://www.dropbox.com/scl/fi/jq9ymszyz1khnluw9403t/my-photo.jpeg?rlkey=f7x0ksjrlh1xiv0tgjymbf9ie&raw=1",
   "logoFormat": "initials",
   "openToWork": true,
-  "web3formsKey": ""
+  "web3formsKey": "a51fe689-bbe3-4e44-960f-373c622b30ca"
 }
 
 export const projects = [
   {
-    "title": "Suzess",
-    "description": "Something cool is going to be updated here. For now, you can subscribe to the updates on the website; no need to sign an NDA.",
+    "title": "ViTalia - Vision Transformer for Malaria Detection",
+    "description": "Developed a Vision Transformer (ViT) solution for malaria detection, achieving a 97.53% accuracy, surpassing CNN models by 2.13%. The project integrates memory, reasoning, and reinforcement learning for improved medical diagnosis performance.",
     "tags": [
-      "Java",
-      "SpringBoot",
-      "SpringSecurity",
-      "React",
-      "AWS",
-      "Python"
+      "Vision Transformer",
+      "Reinforcement Learni",
+      "PyTorch",
+      "TensorFlow",
+      "Medical Imaging",
+      "AI"
     ],
     "links": [
       {
-        "name": "Website",
-        "url": "https://suzess.app/",
-        icon: Globe
+        "name": "Github",
+        "url": "https://github.com/rzeta-10/ViTalia",
+        icon: Github
       }
     ],
     "inDevelopment": true
   },
   {
-    "title": "Realtime Stock Market Analytics",
-    "description": "Built a real-time stock market analytics platform using Python, Flask, Kafka, and Spark, reducing data delays from 8s to 3s and boosting throughput by 60%. Leveraged Chart.js for interactive visualizations, enabling users to track live market trends with engaging, low-latency dashboards",
+    "title": "Full-Stack YouTube Downloader",
+    "description": "Engineered a high-performance YouTube downloader with video/audio extraction, clip selection, and format options. The architecture utilizes Next.js, MongoDB, BullMQ, and Redis for scalability and asynchronous processing. Docker was used to containerize the application for seamless deployment.",
     "tags": [
-      "Kafka",
-      "Apache Spark",
-      "Python",
-      "Chart.js"
+      "Next.js",
+      "MongoDB",
+      "BullMQ",
+      "Redis",
+      "Docker",
+      "Full-stack"
     ],
     "links": [
       {
         "name": "Github",
-        "url": "https://github.com/abhishekbuilds/StreamAnalytics",
+        "url": "https://github.com/pratyek/mp3-downloader",
         icon: Github
       }
-    ]
+    ],
+    "inDevelopment": false
   },
   {
-    "title": "Linkedin Email Extractor",
-    "description": "LinkedIn Email Extractor (LEE) is a Python script that uses Google’s Custom Search Engine API to find LinkedIn profiles and automatically extract email addresses from profile descriptions. Open-sourced under the MIT license, LEE has earned 60 GitHub stars and 47 forks to date.",
+    "title": "Deep Learning Models from Scratch",
+    "description": "EImplemented various deep learning architectures like ResNet-152, CNNs, AutoEncoders, and GANs from scratch using PyTorch and TensorFlow. Focused on optimizing hyperparameters for high accuracy across diverse datasets.",
     "tags": [
-      "Node.js",
-      "PostgreSQL",
-      "Redis",
-      "Docker"
+      "PyTorch",
+      "TensorFlow",
+      "Deep Learning",
+      "GAN",
+      "Neural Networks",
+      "RNN"
     ],
     "links": [
       {
         "name": "Github",
-        "url": "https://github.com/abhishekbuilds/linkedin-email-extractor",
+        "url": "https://github.com/pratyek/DL",
         icon: Github
       }
-    ]
+    ],
+    "inDevelopment": false
+  },
+  {
+    "title": "Jobby App - Job Search Platform",
+    "description": "Developed a job search platform with a secure authentication system using JWT tokens. The app allows users to log in, search jobs, and view detailed listings. Built with React.js and integrated with REST APIs for dynamic content.",
+    "tags": [
+      "ReactJS",
+      "JWT authentication",
+      "REST API",
+      "Local Storage",
+      "Full-stack"
+    ],
+    "links": [
+      {
+        "name": "Jobby-app",
+        "url": "http://pratyekjobbyapp.ccbp.tech",
+        icon: Globe
+      }
+    ],
+    "inDevelopment": false
+  },
+  {
+    "title": "Nxt Watch - YouTube Clone",
+    "description": "Created a YouTube clone where users can log in, search for videos, view details, and toggle between light and dark themes. The app includes secure authentication and routing for a seamless user experience.",
+    "tags": [
+      "ReactJS",
+      "JWT authentication",
+      "REST API",
+      "Full-stack"
+    ],
+    "links": [
+      {
+        "name": "Nxt Watch",
+        "url": "http://pratyeknxtwatch.ccbp.tech",
+        icon: Globe
+      }
+    ],
+    "inDevelopment": false
+  },
+  {
+    "title": "IPL Dashboard",
+    "description": "Developed an IPL dashboard to list teams and display detailed information about each team's matches. The app fetches data asynchronously using API calls and uses React Router for page routing and navigation.",
+    "tags": [
+      "ReactJS",
+      "API integration",
+      "Routing",
+      "JavaScript",
+      "Full-stack"
+    ],
+    "links": [
+      {
+        "name": "IPL Dashboard",
+        "url": "http://pratyekipl.ccbp.tech",
+        icon: Globe
+      }
+    ],
+    "inDevelopment": false
+  },
+  {
+    "title": "Automation of Network Configurations using Python Scripting",
+    "description": "Automated network management tasks like IP assignment and ACL management with Python scripting. Used Paramiko and Netmiko libraries for secure device connections and created scalable backup solutions for network configurations.",
+    "tags": [
+      "Python",
+      "Networking",
+      "Automation",
+      "Paramiko",
+      "Netmiko"
+    ],
+    "links": [
+      {
+        "name": "Github",
+        "url": "https://github.com/pratyek",
+        icon: Github
+      }
+    ],
+    "inDevelopment": false
+  },
+  {
+    "title": "UnixLite - Minimalist Unix-like Shell",
+    "description": "Developed a lightweight Unix-like shell supporting essential commands like process handling and file operations using C and Unix system calls. Implemented features like redirection, piping, and multi-process management.",
+    "tags": [
+      "C",
+      "Unix System Calls",
+      "Shell scripting",
+      "Bash",
+      "Operating Systems"
+    ],
+    "links": [
+      {
+        "name": "Github",
+        "url": "https://github.com/rzeta-10/UnixLite",
+        icon: Github
+      }
+    ],
+    "inDevelopment": false
+  },
+  {
+    "title": "Smile Lab",
+    "description": "Smile Lab is a web application designed to provide lab-related services, leveraging modern technologies like TypeScript and Node.js. The application includes various functionalities related to lab management, with a responsive front end and seamless back-end integration to improve user experience. It utilizes Tailwind CSS for styling and Vite for fast development, ensuring performance and scalability.",
+    "tags": [
+      "Typescript",
+      "NodeJS",
+      "Tailwind CSS",
+      "Vite",
+      "Full-stack"
+    ],
+    "links": [
+      {
+        "name": "Github",
+        "url": "https://github.com/VIVEKREDDYGOLLALA/Smile_Lab",
+        icon: Github
+      }
+    ],
+    "inDevelopment": false
   }
 ]
 
@@ -146,19 +260,23 @@ export const skills = [
       },
       {
         "name": "HTML",
-        "icon": "https://www.dropbox.com/scl/fi/qlk211pn5ueb17gw36mui/HTML5.png?rlkey=t0mryjr28915h5bk495xfekni&st=4nhfo0qk&dl=1"
+        "icon": "https://www.dropbox.com/scl/fi/qlk211pn5ueb17gw36mui/HTML5.png?rlkey=t0mryjr28915h5bk495xfekni&st=4nhfo0qk&raw=1"
       },
       {
         "name": "CSS",
-        "icon": "https://www.dropbox.com/scl/fi/jqdx5b3pginw8gumalhwf/CSS3.png?rlkey=ts5q8m2h9n7rcs8pa0545mzxw&st=jeq4tm7s&dl=1"
+        "icon": "https://www.dropbox.com/scl/fi/jqdx5b3pginw8gumalhwf/CSS3.png?rlkey=ts5q8m2h9n7rcs8pa0545mzxw&st=jeq4tm7s&raw=1"
       },
       {
         "name": "YAML",
-        "icon": "https://www.dropbox.com/scl/fi/ctq2qh182xtgniyetm9l2/YAML.png?rlkey=y5ur6yh8vechovjj82f6hx3iv&st=w29msxuq&dl=1"
+        "icon": "https://www.dropbox.com/scl/fi/ctq2qh182xtgniyetm9l2/YAML.png?rlkey=y5ur6yh8vechovjj82f6hx3iv&st=w29msxuq&raw=1"
       },
       {
         "name": "Bash",
-        "icon": "https://www.dropbox.com/scl/fi/n2e3wa7ydvxdffm9v8qmx/Bash.png?rlkey=bthqmpf8q7mv9d5jj2jexg0z8&st=fp8a5oho&dl=1"
+        "icon": "https://www.dropbox.com/scl/fi/n2e3wa7ydvxdffm9v8qmx/Bash.png?rlkey=bthqmpf8q7mv9d5jj2jexg0z8&st=fp8a5oho&raw=1"
+      },
+      {
+        "name": "Cpp",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
       }
     ]
   },
@@ -178,12 +296,16 @@ export const skills = [
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg"
       },
       {
-        "name": "Apache Kafka",
-        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg"
+        "name": "Sqlite",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg"
       },
       {
-        "name": "MongoDB",
-        "icon": "https://cdn.simpleicons.org/mongodb/47A248"
+        "name": "Mysql",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+      },
+      {
+        "name": "Ubuntu",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain.svg"
       }
     ]
   },
@@ -191,36 +313,16 @@ export const skills = [
     "category": "Infrastructure & Tools",
     "items": [
       {
+        "name": "AWS",
+        "icon": "https://www.dropbox.com/scl/fi/5q3sbh6jkpbg76rpye80q/aws-icon.png?rlkey=ldi13y3rmrjlb1c1i9vtvfire&st=lpelux0v&raw=1"
+      },
+      {
         "name": "Docker",
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
       },
       {
         "name": "Git",
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
-      },
-      {
-        "name": "Jenkins",
-        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg"
-      },
-      {
-        "name": "TeamCity",
-        "icon": "https://www.dropbox.com/scl/fi/qwg9j7blhqm0oepu9uiqp/TeamCity_Icon.png?rlkey=oudtbpvz5rd5pyxmrqnkpzzlo&st=ynbn0t2o&dl=1"
-      },
-      {
-        "name": "Jira",
-        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg"
-      },
-      {
-        "name": "Maven",
-        "icon": "https://www.dropbox.com/scl/fi/mmnfqbf78689vs73lbm5l/maven.144x256.png?rlkey=xi3b8ptlq37lsh8q8e105ugfu&st=x6fn2rs7&dl=1"
-      },
-      {
-        "name": "Azure",
-        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg"
-      },
-      {
-        "name": "AWS",
-        "icon": "https://www.dropbox.com/scl/fi/5q3sbh6jkpbg76rpye80q/aws-icon.png?rlkey=ldi13y3rmrjlb1c1i9vtvfire&st=lpelux0v&dl=1"
       }
     ]
   },
@@ -230,34 +332,6 @@ export const skills = [
       {
         "name": "Spring",
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
-      },
-      {
-        "name": "JUnit",
-        "icon": "https://www.dropbox.com/scl/fi/vcbtk0voy15t60y80swzy/JUnit.png?rlkey=3vckv6b1hhahkhh8z4lma0h1r&st=v2u7nbv8&dl=1"
-      },
-      {
-        "name": "Spark",
-        "icon": "https://www.dropbox.com/scl/fi/a1ep3f8txrrrz7gqgwe7t/Apache-Spark.png?rlkey=s33gensoe4ree27k2f1excii2&st=xfk93prs&dl=1"
-      },
-      {
-        "name": "Hadoop",
-        "icon": "https://www.dropbox.com/scl/fi/4hqav2uhmb9ufykx5tn15/Apache-Hadoop.png?rlkey=vh9hpoldt6qgkmxtizf9oloyj&st=hpu11ty7&dl=1"
-      },
-      {
-        "name": "Selenium",
-        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg"
-      },
-      {
-        "name": "Appium",
-        "icon": "https://cdn.simpleicons.org/appium/4285F4"
-      },
-      {
-        "name": "Karate",
-        "icon": "https://www.dropbox.com/scl/fi/xdvbkkt913npr6ftu048n/Karate-Labs.png?rlkey=qt8xvglsxwaiulvui7yjp3nyx&st=ytmk6p0x&dl=1"
-      },
-      {
-        "name": "Cucumber",
-        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cucumber/cucumber-plain.svg"
       }
     ]
   },
@@ -282,74 +356,74 @@ export const skills = [
 
 export const experience = [
   {
-    "title": "Information Technology Analyst",
-    "company": "NTT Data",
-    "location": "Bengaluru, India",
-    "startYear": "2019",
-    "endYear": "2022",
+    "title": "ML trainee",
+    "company": "ASL , DRDL ",
+    "location": "Kanchan bagh , hyderabad",
+    "startYear": "2024",
+    "endYear": "2024",
     "isOngoing": false,
     "description": [
-      "Enhanced error handling across multiple legacy microservices by applying standard HTTP status codes and streamlining the troubleshooting process.",
-      "Developed reusable UI components and implemented client-side validation in React to strengthen form submission reliability.",
-      "Delivered robust solutions with high unit test coverage and improved maintainability through reusable modules."
-    ]
-  },
-  {
-    "title": "Software Developer Intern",
-    "company": "Delvetech Software",
-    "location": "New Delhi, Delhi",
-    "startYear": "2018",
-    "endYear": "2018",
-    "isOngoing": false,
-    "description": [
-      "Analyzed and addressed 20+ defects in a Python enterprise project, improving project stability",
-      "Created and updated over 10 technical documents, reducing onboarding time for new team members"
-    ]
-  },
-  {
-    "title": "Software Engineer II",
-    "company": "Jio Platforms Limited",
-    "location": "Bengaluru, India",
-    "startYear": "2022",
-    "endYear": "2023",
-    "isOngoing": false,
-    "description": [
-      "Built scalable RESTful APIs using Java, Spring Boot, and Hexagonal Architecture, handling 50k+ daily requests for a super app.",
-      "Improved code quality (750K LOCs) by 25% and cut post-release defects by 15% through SonarQube-based continuous analysis."
+      "Worked as an ML trainee at ASL, developing software fault prediction models using NASA Promise datasets to enhance system reliability through ML."
     ]
   }
 ]
 
 export const education = [
   {
-    "degree": "Master of Science in Computer Science",
-    "institution": "California State University",
-    "location": "Fullerton, CA",
-    "startYear": "2023",
+    "degree": "Bachelor of Technology in Computer Science",
+    "institution": "IIIT, Design and Manufacturing, Kancheepuram",
+    "location": "Chennai, Tamil Nadu, IND",
+    "startYear": "2022",
     "endYear": "",
     "isOngoing": true,
-    "description": "Specialized in distributed systems and database management. Research focus on scalable architecture patterns."
-  },
-  {
-    "degree": "Bachelor of Technology in Computer Science",
-    "institution": "Dr. APJ Abdul Kalam Technical University",
-    "location": "Lucknow, India",
-    "startYear": "2015",
-    "endYear": "2019",
-    "isOngoing": false,
-    "description": "Core curriculum in algorithms, data structures, and systems programming."
+    "description": "Specialized in ML / DL, Achieved top grades in DSA , Design and Analysis of Algorithm"
   }
 ]
 
 export const certifications = [
   {
-    "title": "Oracle Certified Associate, Java SE 8 Programmer",
-    "issuer": "Oracle",
-    "issueDate": "2019",
+    "title": "Java 17 Masterclass",
+    "issuer": "Udemy",
+    "issueDate": "2024",
     "expiryDate": "",
-    "credentialId": "OC1886086",
-    "badgeUrl": "https://www.dropbox.com/scl/fi/0iymz04kccszkerghcbv3/OCAJSE8.jpg?rlkey=5ikcq7wj3lbbdkr7lc6k8p0w1&st=sb62hllf&dl=1",
-    "credentialUrl": "https://www.dropbox.com/scl/fi/zy2sectohdaer87f2jkpt/OCAJSE8-certificate.pdf?rlkey=5mlkx323s4fceind7pi3ezm6r&st=cnfmu0nw&dl=1",
-    "description": "Scored 90% on the Oracle Java certification exam, demonstrating my proficiency in encapsulation, conditional logic, multi-dimensional arrays, and operator precedence."
+    "credentialId": "0004",
+    "credentialUrl": "",
+    "description": "Learned advanced Java 17 concepts, including new language features, functional programming techniques, and performance optimization. Gained hands-on experience with Java's latest updates, building efficient and scalable applications.\n"
+  },
+  {
+    "title": "Python",
+    "issuer": "NPTEL",
+    "issueDate": "2024",
+    "expiryDate": "",
+    "credentialId": "NPTEL24CS57S653407817",
+    "credentialUrl": "",
+    "description": "Gained a strong foundation in Python programming through the NPTEL \"Joy of Computing\" course, covering basic syntax, data structures, and problem-solving techniques. Developed the ability to write efficient and clean Python code for real-world applications."
+  },
+  {
+    "title": "React",
+    "issuer": "CCBP academy",
+    "issueDate": "2024",
+    "expiryDate": "",
+    "credentialId": "YEMMPBBSKS",
+    "credentialUrl": "",
+    "description": "Mastered React.js fundamentals through CCBP Academy, including component-based architecture, state management, and building interactive UIs. Gained practical experience in creating dynamic web applications with React's modern features and best practices.\n"
+  },
+  {
+    "title": "Node JS",
+    "issuer": "CCBP Academy",
+    "issueDate": "2024",
+    "expiryDate": "",
+    "credentialId": "ZQOJEFIUYT",
+    "credentialUrl": "",
+    "description": "Acquired in-depth knowledge of Node.js for building scalable and high-performance server-side applications. Gained hands-on experience with Express.js, API development, and real-time communication using WebSockets."
+  },
+  {
+    "title": "Build your own Dynamic Web application",
+    "issuer": "CCBP academy",
+    "issueDate": "2023",
+    "expiryDate": "",
+    "credentialId": "MMPDICLIEK",
+    "credentialUrl": "",
+    "description": "Learned to design and develop dynamic web applications by integrating front-end and back-end technologies. Gained practical experience in building interactive, user-friendly platforms with a focus on responsiveness, scalability, and efficient data handling."
   }
 ]
