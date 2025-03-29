@@ -622,29 +622,7 @@ export default function Portfolio() {
             />
           </div>
         </section>
-        <FloatingDeployButton portfolioData={unsavedData} />
-        <FloatingActionButtons
-          isEditing={isEditing}
-          onEditToggle={() => {
-            setIsEditing(!isEditing)
-            // Reset Web3Forms API key when entering edit mode
-            if (!isEditing) {
-              setUnsavedData((prev) => ({
-                ...prev,
-                personalInfo: {
-                  ...prev.personalInfo,
-                  web3formsKey: "",
-                },
-              }))
-            }
-          }}
-          onSave={handleSave}
-          onCancel={() => {
-            setUnsavedData(portfolioData)
-            setIsEditing(false)
-          }}
-          data={unsavedData}
-        />
+
       </main>
 
       {/* Footer */}
