@@ -22,18 +22,8 @@ import {
 } from "@/components/ui/alert-dialog"
 import { Plus, Pencil, Trash2 } from "lucide-react"
 import { CertificationCard } from "./certification-card"
-import { CertificationForm } from "./certification-form"
+import { CertificationForm, type Certification } from "./certification-form"
 import { validateUrl, formatUrl } from "@/lib/utils"
-
-interface Certification {
-  title: string
-  issuer: string
-  issueDate: string
-  expiryDate: string
-  credentialId: string
-  credentialUrl: string
-  description: string
-}
 
 interface CertificationEditorProps {
   certifications: Certification[]
@@ -182,8 +172,8 @@ export function CertificationEditor({ certifications, onChange, isEditing }: Cer
               <DialogDescription>Fill in the details for your certification.</DialogDescription>
             </DialogHeader>
             <CertificationForm
-              certification={newCertification}
-              setCertification={setNewCertification}
+              certification={{ ...newCertification, badgeUrl: '' }}
+              setCertification={(cert) => setNewCertification(cert)}
               onSave={() => handleSaveCertification(newCertification)}
               onCancel={() => setIsAddDialogOpen(false)}
               error={error}
@@ -270,8 +260,8 @@ export function CertificationEditor({ certifications, onChange, isEditing }: Cer
           </DialogHeader>
           {editingCertification && (
             <CertificationForm
-              certification={editingCertification}
-              setCertification={setEditingCertification}
+              certification={{...editingCertification, badgeUrl: editingCertification.badgeUrl || ''}}
+              setCertification={(cert) => setEditingCertification(cert)}
               onSave={() => handleSaveCertification(editingCertification)}
               onCancel={() => {
                 setIsAddDialogOpen(false)

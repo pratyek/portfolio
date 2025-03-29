@@ -30,7 +30,7 @@ import { SkillsEditor } from "@/components/skills-editor" // Import SkillsEditor
 import { scrollToSection } from "@/lib/scroll-utils"
 import { FloatingDeployButton } from "@/components/floating-deploy-button" // Import FloatingDeployButton
 import { LogoFormatSelect } from "@/components/logo-format-select"
-import { formatLogo } from "@/lib/utils"
+import { formatLogo, LogoFormat } from "@/lib/utils"
 import { Toaster } from "@/components/ui/toaster"
 import { useToast } from "@/components/ui/use-toast"
 import { validatePortfolioData } from "@/lib/validation"
@@ -38,6 +38,7 @@ import { DynamicFavicon } from "@/components/dynamic-favicon" // Import DynamicF
 import { HiringBadge } from "@/components/hiring-badge" // Add the import
 import { ContactForm } from "@/components/contact-form" // Import ContactForm
 import { LINKS } from "@/lib/config" // Add this import
+import { SocialLink } from "@/lib/social-utils"
 
 // Add this type for our form
 type FormData = {
@@ -145,7 +146,7 @@ export default function Portfolio() {
 
   return (
     <div className="min-h-screen bg-background">
-      <DynamicFavicon name={unsavedData.personalInfo.name} format={unsavedData.personalInfo.logoFormat} />
+      <DynamicFavicon name={unsavedData.personalInfo.name} format={unsavedData.personalInfo.logoFormat as LogoFormat} />
       {/* Header/Navigation */}
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -157,12 +158,12 @@ export default function Portfolio() {
             {/* Logo and Format Select */}
             <div className="flex items-center gap-2 flex-shrink-0">
               <a href="#home" className="text-xl font-bold">
-                {formatLogo(unsavedData.personalInfo.name, unsavedData.personalInfo.logoFormat)}
+                {formatLogo(unsavedData.personalInfo.name, unsavedData.personalInfo.logoFormat as LogoFormat)}
               </a>
               {isEditing && (
                 <LogoFormatSelect
                   name={unsavedData.personalInfo.name}
-                  format={unsavedData.personalInfo.logoFormat}
+                  format={unsavedData.personalInfo.logoFormat as LogoFormat}
                   onChange={(format) =>
                     setUnsavedData({
                       ...unsavedData,
@@ -483,7 +484,7 @@ export default function Portfolio() {
               )}
             </motion.div>
             <SocialLinksEditor
-              links={unsavedData.socialLinks}
+              links={unsavedData.socialLinks as SocialLink[]}
               onChange={(newLinks) => {
                 setUnsavedData({
                   ...unsavedData,
